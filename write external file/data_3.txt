@@ -1,0 +1,3 @@
+otong surotongn r+ baris 1
+menambah dengan r+ baris 2
+menambah dengan r+ baris 3
