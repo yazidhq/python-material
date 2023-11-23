@@ -41,9 +41,52 @@ class Hero(Team, TypeHero):
         self.health = health
 
 
-bloodseeker = Hero("Bloodseeker", 100)
-bloodseeker.setTeam("Dire")
-bloodseeker.setType("Core")
+# bloodseeker = Hero("Bloodseeker", 100)
+# bloodseeker.setTeam("Dire")
+# bloodseeker.setType("Core")
 
-bloodseeker.showTeam()
-bloodseeker.showType()
+# bloodseeker.showTeam()
+# bloodseeker.showType()
+
+
+# # Method resolution order
+# class A:
+#     def show(self):
+#         print("ini adalah method A")
+
+
+# class B:
+#     def show(self):
+#         print("ini adalah method B")
+
+
+# class C(B, A):
+#     pass
+
+
+# objek = C()
+# objek.show()
+
+
+# - Diamond Problem
+class A:
+    def show(self):
+        print("ini adalah method A")
+
+
+class B(A):
+    def show(self):
+        print("ini adalah method B")
+
+
+class C(A):
+    def show(self):
+        print("ini adalah method C")
+
+
+class D(B, C):
+    pass
+
+
+objek = D()
+objek.show()
